@@ -27,6 +27,17 @@ public class StringMain2 {
 
 		}
 		System.out.println(count);
+
+		String st = "한화, 기아, 삼성, 롯데, 키움, ssg, lg, nc, kt";
+
+		String[] teams = st.split(",");
+
+		for (int i = 0; i < teams.length; i++) {
+			System.out.println(teams[i]);
+		}
+
+		System.out.println(teams[1].trim().equals("기아"));
+
 	}
 
 }
