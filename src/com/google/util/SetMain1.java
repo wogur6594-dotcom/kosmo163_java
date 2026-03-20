@@ -11,7 +11,7 @@ public class SetMain1 {
 		set.add(2);
 		set.add(2);
 		
-		System.out.println(set.size());
+		System.out.println(set);
 
 	}
 

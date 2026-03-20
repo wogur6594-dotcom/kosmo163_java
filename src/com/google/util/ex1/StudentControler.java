@@ -18,7 +18,8 @@ public class StudentControler {
 			System.out.println("2. 학생정보출력");
 			System.out.println("3. 학생정보검색");
 			System.out.println("4. 학생정보추가");
-			System.out.println("5. 종      료");
+			System.out.println("5. 학생정보삭제");
+			System.out.println("6. 종      료");
 			int select = sc.nextInt();
 
 			if (select == 1) {
@@ -37,8 +38,10 @@ public class StudentControler {
 				}
 
 			} else if (select == 4) {
-				StudentDTO studentDTO = ss.add();
-				ar.add(studentDTO);
+//				StudentDTO studentDTO = ss.add();
+//				ar.add(studentDTO);
+			} else if (select == 5) {
+				ss.delete(ar);
 			} else {
 				break;
 			}
